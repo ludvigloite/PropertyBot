@@ -48,6 +48,7 @@ chrome.runtime.onMessage.addListener(function (request){
 	for (let i = 0; i < dtList.length; i++) {
 		if (dtList[i].textContent == "Totalpris"){
 			var totalPris = ddList[i].textContent.replace("kr","").replace(" ","");
+			console.log(totalPris)
 		}
 		else if (dtList[i].textContent == "Primærrom"){
 			var primaerRom = ddList[i].textContent.replace(" m²","");

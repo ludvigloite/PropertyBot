@@ -1,17 +1,20 @@
 {
-	"name": "Finn Eiendom Bot",
-	"version": "0.1",
-	"manifest_version": 2,
-	"content_scripts": [
-	{
-		"matches": ["<all_urls>"],
-		"js": ["content.js"]
-	
-	}
-],
-	"browser_action":{
-		"default_popup": "popup.html",
-		"default_title": "Ludvigs addon"
-	}
-	
+  "name": "Finn Eiendom Bot",
+  "version": "0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Ludvigs addon"
+  },
+  "content_security_policy": {}
 }
